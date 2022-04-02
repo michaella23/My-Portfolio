@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <title>Michaella Rodriguez Portfolio</title>
+ 
+</head>
+
+<body>
+    <header>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home"> <!-- intro section/home -->
+        <!-- image and text ... -->
+            <div>
+                <h1 class="section-title intro-section-title">Hi, I'm <span class="name">Michaella,</span></h1>
+                <p class="section-subtitle intro-section-subtitle">front-end web developer</p>
+            </div>
+            <img src="images/profile2.jpg" alt="headshot of Michaella, white woman with long hair and glasses" class="intro-img" />
+    </section>
+
+    <section class="about" id="about"> <!-- about section/services -->
+         <!-- 3 things that are important to me as a developer ... -->
+             <!-- design, accessibility, collaboration ... -->
+        <!-- or... technologies I use -->
+             <!-- HTML/CSS/JS/React/APIs/Git/GitHub/etc... -->
+        <div class="about-child developer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="technologies">
+            <h3 class="section-subtitle about-section-subtitle">Technologies I use</h3>
+            <div class="about-child icon-grid">
+                <!-- data-toggle and data-tooltip are from bootstrap... -->
+                <img src="icons/icons8-html-5-48.png" alt="HTML5" name="HTML5">
+                <img src="icons/icons8-css3-48.png" alt="CSS3" name="CSS3">
+                <img src="icons/icons8-javascript-48.png" alt="JavaScript" name="JavaScript">
+                <img src="icons/icons8-figma-48.png" alt="Figma" name="Figma">
+                <img src="icons/icons8-react-native-48.png" alt="React" name="React">
+                <img src="icons/icons8-git-48.png" alt="Git" name="Git">
+                <img src="icons/icons8-github-48.png" alt="GitHub" name="GitHub">
+                <img src="icons/icons8-rest-api-48.png" alt="Web APIs" name="Web APIs">
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- projects section -->
+         <!-- tech documentation page, some kind of product landing page, travel journal, blackjack game -->
+    </section>
+
+    <section> <!-- footer section -->
+        <!-- social icons and or menu... -->
+            <!-- email address, phone number -->
+            <!-- GitHub, Twitter, LinkedIn, CodePen(?) -->
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

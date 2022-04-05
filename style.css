@@ -59,11 +59,10 @@ body {
 
 img {
     max-width: 100%;
-    border-radius: 7px;
 }
 
 section {
-    padding: 5em 2em;
+    padding: 4em 2em;
 }
 
 /* ============== Typography =============== */
@@ -93,12 +92,13 @@ h3 { font-size: var(--fs-h3) }
 
 .intro-section-title {
     font-weight: 300;  
-    margin-bottom: .35em;
+    margin-bottom: 0;
 }
 
 .name {
     font-weight: var(--fw-bold);
     display: block;
+    color: var(--clr-bright);
 }
 
 .intro-section-subtitle {
@@ -106,6 +106,7 @@ h3 { font-size: var(--fs-h3) }
     color: var(--clr-dark);
     font-size: var(--fs-h3);
     padding: 0.35em;
+    margin-bottom: 2em;
 }
 
 .about-section-subtitle {
@@ -122,7 +123,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    /* z-index: 100; */
+    z-index: 2;
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1)
 }
@@ -218,7 +219,7 @@ nav {
 }
 
 .intro-section-subtitle {
-    margin: 0;
+    margin: .5em 0;
 }
 
 @media (min-width: 700px) {
@@ -303,22 +304,88 @@ nav {
 
 /* ============== Projects =============== */
 
-.project {
-    background-color: var(--clr-bright);
-    border: 1px solid white;
-    width: 400px;
-    height: 400px;
-    margin: 0;
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
 }
 
-@media (min-width: 750px) {
-    .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+
+}
+
+.project {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.red {
+    background-color: var(--clr-bright);
+}
+
+.orange {
+    background-color: var(--clr-accent);
+}
+
+.yellow {
+    background-color: var(--clr-light-1);
+}
+
+.portfolio-img {
+    transition: 
+    transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.portfolio-img:hover, .portfolio-img:focus {
+    transform: scale(1.2);
+    opacity: .75;
 }
 
 /* ============== Footer =============== */
+
+
+footer {
+    text-align: center;
+    font-size: var(--fs-h3);
+}
+
+.email {
+    text-decoration: none;
+
+}
+
+.social-media {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.social-icon {
+    margin: 0 .5em;
+}
+
+.social-link {
+    color: var(--clr-accent);
+    padding: .5em;
+}
+
+
+    
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover, footer a:focus {
+    opacity: .6;
+}
+}
 /* ============== =============== */
 /* ============== =============== */
 /* ============== =============== */

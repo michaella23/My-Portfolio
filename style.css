@@ -27,8 +27,8 @@
         --clr-light-2: #4D96FF; */
     /* colors */
         --clr-dark: #0F2C67;
-        --clr-bright: #CD1818;
-        --clr-accent: #F3950D;
+        --clr-bright: #F64747;/*#F4AEAE;*/
+        --clr-accent:  #F89406;/*#F7B150;*/
         --clr-light-1: #F4E185;
         --clr-light-2: #4D96FF; 
     /* box shadow */
@@ -105,12 +105,13 @@ h3 { font-size: var(--fs-h3) }
     background-color: var(--clr-accent);
     color: var(--clr-dark);
     font-size: var(--fs-h3);
-    padding: 0.35em;
+    padding: 0.4em;
     margin-bottom: 2em;
 }
 
 .about-section-subtitle {
     text-align: center;
+    font-size: var(--fs-h3);
 }
 
 /* ============== Header =============== */
@@ -222,6 +223,7 @@ nav {
     margin: .5em 0;
 }
 
+
 @media (min-width: 700px) {
     .intro {
         display: grid;
@@ -241,8 +243,8 @@ nav {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -10em;
-        width: calc(100% + 10em);
+        left: -15em;
+        width: calc(100% + 23em);
     }
 
     .intro-img {
@@ -253,13 +255,16 @@ nav {
     }
 }
 
+
 /* ============== About =============== */
 /* ======= this needs to be in a media query ======== */
 
 
 .developer {
     margin: 0 auto;  
+    margin: 0 4em;
     margin-bottom: 2em;
+    text-align: center;
 }
 
 .icon-grid {
@@ -268,7 +273,7 @@ nav {
     grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
     width: 350px;
-    margin: 0 auto;
+    margin: 2em;
     padding: 1em 2em;
     place-items: center;
 }
@@ -307,7 +312,7 @@ nav {
 .portfolio {
     display: flex;
     flex-direction: column;
-    padding: 5em;
+    align-items: center;
 }
 
 .projects {
@@ -320,6 +325,7 @@ nav {
     display: flex;
     align-items: stretch;
     overflow: hidden;
+    height: 450px;
 }
 
 .red {
@@ -335,6 +341,7 @@ nav {
 }
 
 .portfolio-img {
+    width: 100%;
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
@@ -345,17 +352,35 @@ nav {
     opacity: .75;
 }
 
+@media (min-width: 800px) {
+    .portfolio {
+        align-items: unset;
+    }
+}
+
 /* ============== Footer =============== */
 
 
 footer {
     text-align: center;
     font-size: var(--fs-h3);
+    display: flex;
+    flex-direction: column;
+    margin: 5em;
+}
+
+.invitation {
+    margin-bottom: 2em;
+    line-height: 1.4em;
+}
+
+.contact-info {
+
 }
 
 .email {
     text-decoration: none;
-
+    color: var(--clr-light-1);
 }
 
 .social-media {
@@ -371,12 +396,9 @@ footer {
 }
 
 .social-link {
-    color: var(--clr-accent);
+    color: var(--clr-light-1);
     padding: .5em;
-}
-
-
-    
+}  
 
 footer a {
     color: inherit;
@@ -385,6 +407,12 @@ footer a {
 footer a:hover, footer a:focus {
     opacity: .6;
 }
+
+@media (min-width: 750px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 /* ============== =============== */
 /* ============== =============== */

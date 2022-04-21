@@ -55,14 +55,20 @@ body {
     color: var(--clr-accent);
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
+    padding: 1em;
 }
 
 img {
     max-width: 100%;
 }
 
-section {
-    padding: 4em 2em;
+header {
+    margin-top: 4em;
+}
+
+section, footer {
+    width: 100vw;
+    margin-top: 2.5em;
 }
 
 /* ============== Typography =============== */
@@ -147,7 +153,7 @@ nav {
     border: 0;
     cursor: pointer;
     position: absolute;
-    right: 2em;
+    right: 1em;
     top: 2em;
     z-index: 1000;
 }
@@ -259,12 +265,16 @@ nav {
 /* ============== About =============== */
 /* ======= this needs to be in a media query ======== */
 
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .developer {
-    margin: 0 auto;  
-    margin: 0 4em;
     margin-bottom: 2em;
     text-align: center;
+    
 }
 
 .icon-grid {
@@ -272,8 +282,8 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-gap: 1em;
-    width: 350px;
-    margin: 2em;
+    width: 325px;
+    margin: 0 2em;
     padding: 1em 2em;
     place-items: center;
 }
@@ -282,27 +292,27 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 @media (min-width: 800px) {
     .about {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
     }
 
     .about-child {
-        max-width: 500px;
+        padding: 2em;
     }
 
+    .about-section-subtitle {
+        margin: 0;
+        
+    }
 
     .about-child + .about-child {
-        margin-left: 5em;
+        margin-left: 3em;
     }
-
-    
 
 }
 
@@ -313,19 +323,19 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 400px;
 }
 
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-
 }
 
 .project {
     display: flex;
     align-items: stretch;
     overflow: hidden;
-    height: 375px;
+    height: 300px;
 }
 
 .red {
@@ -355,6 +365,9 @@ nav {
 @media (min-width: 800px) {
     .portfolio {
         align-items: unset;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
     }
 }
 

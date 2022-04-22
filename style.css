@@ -62,15 +62,6 @@ section {
     overflow-x: hidden;
 }
 
-/*header {
-    margin-top: 4em;
-} */
-
-/*section, footer {
-    width: 100vw;
-    margin-top: 2.5em;
-}*/
-
 /* ============== Typography =============== */
 
 h1,
@@ -342,6 +333,10 @@ nav {
 
 .portfolio {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects {

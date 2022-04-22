@@ -49,7 +49,6 @@ body {
     color: var(--clr-accent);
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
-    padding: 1em;
     
 }
 
@@ -60,6 +59,7 @@ img {
 
 section {
     padding: 5em 2em 0;
+    overflow-x: hidden;
 }
 
 /*header {
@@ -260,8 +260,8 @@ nav {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -15em;
-        width: calc(100% + 23em);
+        left: -12em;
+        width: calc(100% + 12em);
     }
 
     .intro-img {
@@ -414,7 +414,7 @@ footer {
     padding-top: 5em;
     text-align: center;
     font-size: var(--fs-h3);
-    color: var(--clr-bright);
+    color: var(--clr-accent);
     /*display: flex;
     flex-direction: column; */
 
@@ -431,7 +431,7 @@ footer {
 
 .email {
     text-decoration: none;
-    color: var(--clr-accent);
+    color: var(--clr-bright);
 }
 
 .social-media {

@@ -333,7 +333,7 @@ nav {
         align-items: flex-start;
         justify-content: center;
         max-width: 1200px;
-
+        margin: 0 auto;
     }
 
     .developer {
@@ -345,9 +345,6 @@ nav {
         align-self: flex-start
     }
 
-    .about-child {
-        margin-left: 3em;
-    }
 
     .about-section-subtitle {
         margin: 0;
@@ -355,7 +352,7 @@ nav {
     }
 
     .about-child + .about-child {
-        margin-left: 8em;
+        margin-left: 5em;
     }
 
 }

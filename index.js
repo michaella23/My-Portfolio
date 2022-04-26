@@ -11,3 +11,7 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open')
     })
 })
+
+let parts = ["micha", "ella", "com", "&#46;", "&#64;", "hotmail"];
+let email = parts[0] + parts[3] + parts[1] + parts[4] + parts[5] + parts[3] + parts[2];
+document.getElementById("email").innerHTML=email;

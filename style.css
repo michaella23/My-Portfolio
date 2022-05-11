@@ -383,7 +383,7 @@ nav {
 }
 
 .middle {
-    opacity: 0.75;
+    opacity: 0;
     position: absolute;
     left: 3em;
     right: 3em;
@@ -395,7 +395,7 @@ nav {
 .project-text {
     background-color: var(--clr-dark);
     color: white;
-    padding: .75em 2em;
+    padding: 1.75em 2em;
 }
 
 .project:hover .middle {

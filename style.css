@@ -84,7 +84,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .nav-link:hover, .nav-link:focus {
-    opacity: .65;
+    color: var(--clr-light-2);
     cursor: pointer;
 }
 
@@ -442,13 +442,14 @@ footer {
     line-height: 1.4em;
 }
 
-.contact-info {
-
-}
-
 .email {
     text-decoration: none;
     color: var(--clr-bright);
+}
+
+.email:focus, .email:hover {
+    color: var(--clr-accent);
+    cursor: pointer;
 }
 
 .social-media {
@@ -464,7 +465,6 @@ footer {
 }
 
 .social-link {
-    
     padding: .5em;
 }  
 
@@ -473,7 +473,7 @@ footer a {
 }
 
 footer a:hover, footer a:focus {
-    opacity: .6;
+    color: var(--clr-bright);
 }
 
 @media (min-width: 750px) {

@@ -18,13 +18,22 @@ const emailEl = document.getElementById("email")
 emailEl.innerHTML = email
 emailText = emailEl.innerHTML;
 
-emailEl.addEventListener("click", copyToClipboard)
+// emailEl.addEventListener("click", copyToClipboard)
 
-function copyToClipboard() {
+// function copyToClipboard() {
 
-   // Copy the text inside the text field
-  navigator.clipboard.writeText(emailText);
+//    // Copy the text inside the text field
+//   navigator.clipboard.writeText(emailText);
 
-  // Alert the copied text
-  alert("Copied the text: " + emailText);
+//   // Alert the copied text
+//   alert("Copied the text: " + emailText);
+// }
+
+function query() {
+    navigator.permissions.query({ name: "write-on-clipboard" }).then((result) => {
+    if (result.state == "granted" || result.state == "prompt") {
+      alert("Write access granted!");
+    }
+  });
 }
+query()
